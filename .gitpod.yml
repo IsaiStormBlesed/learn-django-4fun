@@ -3,7 +3,7 @@ tasks:
       python -m venv venv
       source venv/bin/activate
       pip install --upgrade pip wheel setuptools
-      pip install Django==4.0.6
+      pip install Django
       python manage.py migrate
   - command: |
       source venv/bin/activate
@@ -14,6 +14,4 @@ ports:
     visibility: private
     onOpen: open-browser
 
-vscode:
-  extensions:
-    - ms-python.python
+
